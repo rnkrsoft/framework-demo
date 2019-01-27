@@ -10,14 +10,8 @@ import org.springframework.test.context.ContextConfiguration;
 /**
  * Created by rnkrsoft.com on 2018/12/9.
  */
-@ContextConfiguration(locations = "classpath*:testContext-mq.xml")
+@ContextConfiguration(locations = "classpath*:testContext-mq-consumer.xml")
 public class RabbitMqConsumerTest extends SpringTest{
-    @Data
-    static class Bean1 {
-        String name;
-        int age;
-    }
-
     @Autowired
     MessageQueueConsumer messageQueueConsumer;
     @Test

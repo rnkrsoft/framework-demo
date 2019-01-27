@@ -43,7 +43,7 @@
                 <!--MAPPER文件路径数组-->
                 <property name="mapperLocations">
                     <array>
-                        <!--<value>com/rnkrsoft/framework/orm/spring/mapper</value>-->
+                        <!--<value>com/rnkrsoft/framework/orm/spring/dao</value>-->
                     </array>
                 </property>
                 <!--全局配置-->

@@ -31,14 +31,37 @@ public class TestDao extends DataSourceTest {
         //      b.${yyyyMMddHHmmssSSS} 日期变量表达式
         //      c.${SEQ:长度} 使用SequenceService提供自增整数序号，并进行左边填充指定长度的
         //      d.${RANDOM:长度} 使用随机值，并进行指定长度的填充
-        TbAgentInfoEntity entity = new TbAgentInfoEntity();
-        entity.setAgentName("xxx");
-        entity.setAddress("xxx");
-        entity.setPhone("xxx");
-        entity.setAddUserId("xxx");
-        entity.setUpdateUserId("xxx");
-        tbAgentInfoDAO.insertSelective(entity);
-
+        String id = null;
+        {
+            TbAgentInfoEntity entity = new TbAgentInfoEntity();
+            entity.setAgentName("xxx");
+            entity.setAddress("xxx");
+            entity.setPhone("xxx");
+            entity.setAddUserId("xxx");
+            entity.setUpdateUserId("xxx");
+            tbAgentInfoDAO.insertSelective(entity);
+            id = entity.getId();
+        }
+        {
+            TbAgentInfoEntity entity = new TbAgentInfoEntity();
+            entity.setAgentName("xxx");
+            entity.setAddress("xxx");
+            entity.setPhone("xxx");
+            entity.setAddUserId("xxx");
+            entity.setUpdateUserId("xxx");
+            tbAgentInfoDAO.insert(entity);
+        }
         tbAgentInfoDAO.selectAll();
+
+        TbAgentInfoEntity entity1 = tbAgentInfoDAO.selectByPrimaryKey(id);
+        System.out.println(entity1);
+
+        TbAgentInfoEntity entity2 = new TbAgentInfoEntity();
+        entity2.setId(id);
+        entity2.setPhone("12345678");
+        tbAgentInfoDAO.updateByPrimaryKeySelective(entity2);
+
+        tbAgentInfoDAO.deleteByPrimaryKey(id);
+
     }
 }

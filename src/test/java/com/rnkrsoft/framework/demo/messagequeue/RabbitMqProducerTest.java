@@ -14,12 +14,6 @@ import org.springframework.test.context.ContextConfiguration;
  */
 @ContextConfiguration(locations = "classpath*:testContext-mq-product.xml")
 public class RabbitMqProducerTest extends SpringTest{
-    @Data
-    static class Bean1 {
-        String name;
-        int age;
-    }
-
     @Autowired
     MessageQueueProducer messageQueueProducer;
 

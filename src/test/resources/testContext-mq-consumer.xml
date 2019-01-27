@@ -27,9 +27,4 @@
             </array>
         </property>
     </bean>
-
-    <bean class="com.rnkrsoft.framework.messagequeue.rabbitmq.MessageQueueProducerRabbitMQ">
-        <property name="uri" value="amqp://test:test@127.0.0.1:5672"/>
-        <property name="exchangeName" value="framework.test"/>
-    </bean>
 </beans>

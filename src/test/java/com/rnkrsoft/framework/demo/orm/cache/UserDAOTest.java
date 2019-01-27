@@ -2,7 +2,7 @@ package com.rnkrsoft.framework.demo.orm.cache;
 
 import com.rnkrsoft.framework.cache.client.CachedMap;
 import com.rnkrsoft.framework.demo.orm.cache.entity.User;
-import com.rnkrsoft.framework.demo.orm.cache.mapper.UserDAO;
+import com.rnkrsoft.framework.demo.orm.cache.dao.UserDAO;
 import com.rnkrsoft.framework.test.SpringTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

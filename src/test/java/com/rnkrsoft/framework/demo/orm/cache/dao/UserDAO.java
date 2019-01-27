@@ -1,4 +1,4 @@
-package com.rnkrsoft.framework.demo.orm.cache.mapper;
+package com.rnkrsoft.framework.demo.orm.cache.dao;
 
 import com.rnkrsoft.framework.cache.client.CachedMap;
 import com.rnkrsoft.framework.demo.orm.cache.entity.User;

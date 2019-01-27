@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 /**
- * 版权归氡氪网络科技有限公司所有 rnkrsoft.com 框架自动生成!
+ *  rnkrsoft.com 框架自动生成!
  */
 @Data
 @Builder
