@@ -21,16 +21,16 @@ public class TestDao extends DataSourceTest {
     TbAgentInfoDAO tbAgentInfoDAO;
     @Test
     public void test1(){
-        //MySQL Ö§³ÖÈçÏÂÌØÐÔ
-        //1.ÔÚÊµÌåÖÐÖ¸¶¨ÎïÀíÖ÷¼üÖµ
-        //2.Ê¹ÓÃUUID×Ô¶¯Éú³É£¬ÔÚÊµÌå²åÈëºó¶ÁÈ¡Ö÷¼üÖµ
-        //3.Ê¹ÓÃMySQL±íµÄ×ÔÔöÕûÊýÖ÷¼ü£¬ÔÚÊµÌå²åÈëºó¶ÁÈ¡Ö÷¼üÖµ
-        //4.Ê¹ÓÃSequenceServiceÌá¹©µÄ×ÔÔöÕûÊýÖ÷¼üÖµ£¬ÔÚÊµÌå²åÈëºó¶ÁÈ¡Ö÷¼üÖµ
-        //5.Ê¹ÓÃ±í´ïÊ½Ìá¹©Ö÷¼üÖµ£¬Ö»ÊÊÓÃ×Ö·û´®ÀàÐÍµÄÖ÷¼üÖµ£¬Ö§³Ö±í´ïÊ½Îª
-        //      a.¹Ì¶¨×Ö·û´®
-        //      b.${yyyyMMddHHmmssSSS} ÈÕÆÚ±äÁ¿±í´ïÊ½
-        //      c.${SEQ:³¤¶È} Ê¹ÓÃSequenceServiceÌá¹©×ÔÔöÕûÊýÐòºÅ£¬²¢½øÐÐ×ó±ßÌî³äÖ¸¶¨³¤¶ÈµÄ
-        //      d.${RANDOM:³¤¶È} Ê¹ÓÃËæ»úÖµ£¬²¢½øÐÐÖ¸¶¨³¤¶ÈµÄÌî³ä
+        //MySQL æ”¯æŒå¦‚ä¸‹ç‰¹æ€§
+        //1.åœ¨å®žä½“ä¸­æŒ‡å®šç‰©ç†ä¸»é”®å€¼
+        //2.ä½¿ç”¨UUIDè‡ªåŠ¨ç”Ÿæˆï¼Œåœ¨å®žä½“æ’å…¥åŽè¯»å–ä¸»é”®å€¼
+        //3.ä½¿ç”¨MySQLè¡¨çš„è‡ªå¢žæ•´æ•°ä¸»é”®ï¼Œåœ¨å®žä½“æ’å…¥åŽè¯»å–ä¸»é”®å€¼
+        //4.ä½¿ç”¨SequenceServiceæä¾›çš„è‡ªå¢žæ•´æ•°ä¸»é”®å€¼ï¼Œåœ¨å®žä½“æ’å…¥åŽè¯»å–ä¸»é”®å€¼
+        //5.ä½¿ç”¨è¡¨è¾¾å¼æä¾›ä¸»é”®å€¼ï¼Œåªé€‚ç”¨å­—ç¬¦ä¸²ç±»åž‹çš„ä¸»é”®å€¼ï¼Œæ”¯æŒè¡¨è¾¾å¼ä¸º
+        //      a.å›ºå®šå­—ç¬¦ä¸²
+        //      b.${yyyyMMddHHmmssSSS} æ—¥æœŸå˜é‡è¡¨è¾¾å¼
+        //      c.${SEQ:é•¿åº¦} ä½¿ç”¨SequenceServiceæä¾›è‡ªå¢žæ•´æ•°åºå·ï¼Œå¹¶è¿›è¡Œå·¦è¾¹å¡«å……æŒ‡å®šé•¿åº¦çš„
+        //      d.${RANDOM:é•¿åº¦} ä½¿ç”¨éšæœºå€¼ï¼Œå¹¶è¿›è¡ŒæŒ‡å®šé•¿åº¦çš„å¡«å……
         String id = null;
         {
             TbAgentInfoEntity entity = new TbAgentInfoEntity();
